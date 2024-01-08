@@ -23,7 +23,11 @@ terraform {
 ## Google Provider
 ################################
 
-provider "google" {}
+provider "google" {
+    credentials = "C:/Users/myrem/Desktop/terraform/Git/warm-bonfire-337209-7c4e7f083fdd.json"
+  project = var.google_project_id
+  region  = "us-central1"
+}
 
 ################################
 ## Azure Provider
